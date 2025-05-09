@@ -23,4 +23,33 @@ learning discoveries
     r = read (4)
     w = write (2)
     x = execute (1)
+- 'ls -l' - who owns a hidden file
+- su - switch user
+- /etc (etcetera) - stores critical system wide configuration files
+    - /etc/passwd - stores user account info (not passwords) *sha512
+    - /etc/shadow - stores encrypted user passwords (only viewable by root) *sha512
+    - /etc/crontab - system-wide scheduled tasks (cron jobs)
+    - /etc/ssh/ - contains settings for the SSH server and client
+    - /etc/hostname/ - system's hostname
+    - /etc/hosts - maps hostnames to IP addresses locally
+    - /etc/fstab -controlls how drives and partitions are mounted
+    - /etc/network or etc/netplan/ - network configurations
+ - /var (variable) - stores data that changes while data is running, files that grow, move, or change over time
+    - /var/log/ - log files - system messages, errors, etc. (i.e. syslog, auth.log)
+    - /var/spool/ - queued tasks (i.e. print jobs, mail)
+    - /var/cashe/ - cashed files used by applications
+    - /var/tmp/ -  temporary files that persist between reboots
+    - /var/lib/ - state information for system services (i.e. package databases, containers)
+    - /var/run or /r/ runtime information like active PIDs, sockets (short-lived
+- /root - home directory of superuser
+- /tmp (temporary) - directory for temporary storage of files, can include automatically delete files 
+- nano - text editor
+- vim - advanced text editor
+- wget- download files from the internet
+- SCP (secure copy) - securely copying files between computers over SSH
+    - remote cp (copy) but encrypted
+    - scp [source] [destination]
+    - scp myfile.txt user@remote-ip:/home/user/ (send file to remote machine)
+    - scp uer@remote-ip:/home/user/notes.txt ./notes.txt (get a file from your remote machine to your computer)
 - 
+    - 
