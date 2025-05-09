@@ -24,6 +24,7 @@ learning discoveries
     w = write (2)
     x = execute (1)
 - 'ls -l' - who owns a hidden file
+    - '-a' or '-all' - shows hidden file 
 - su - switch user
 - /etc (etcetera) - stores critical system wide configuration files
     - /etc/passwd - stores user account info (not passwords) *sha512
