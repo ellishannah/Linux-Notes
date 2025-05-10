@@ -47,10 +47,17 @@ learning discoveries
 - nano - text editor
 - vim - advanced text editor
 - wget- download files from the internet
-- SCP (secure copy) - securely copying files between computers over SSH
-    - remote cp (copy) but encrypted
-    - scp [source] [destination]
-    - scp myfile.txt user@remote-ip:/home/user/ (send file to remote machine)
-    - scp uer@remote-ip:/home/user/notes.txt ./notes.txt (get a file from your remote machine to your computer)
-- 
-    - 
+- SCP (secure copy) - securely copying files or directories between computers remotely (i.e. SSH) 
+    - remote cp (copy) with encryption and authentication 
+        - scp [source] [destination]
+        - scp myfile.txt user@remote-ip:/home/user/ (send file to remote machine)
+        - scp uer@remote-ip:/home/user/notes.txt ./notes.txt (get a file from your remote machine to your computer)
+Ubuntu machines come pre-packaged with Python3 which has "HTTPServer"
+    - Python’s http.server module quickly sets up a simple web server to serve files from a local directory. Once running, other devices on the same network can access and download these files using tools like curl or wget.
+    - "python3 -m  http.server" -> get it up and running, -m = server module
+    - open new tab in terminal to use additional commands i.e. wget
+        - i.e. "wget http://10.10.125.159:8000/.flag.txt"
+Process 101
+    - PID Process ID # -> managed by the kernel, numbered by order executed 
+- ps - list of running processes 
+
